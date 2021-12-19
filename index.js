@@ -105,5 +105,135 @@ console.log(studentArray)
 // slice() (start, end) // end does not include
 
 const sliced = studentArray.slice(1, 3)
+console.log(sliced)
 studentArray.slice(1, 3)
 console.log(studentArray)
+
+// FIZZBUZZ  3 VE UCUN KATLARI FIZZ 5 VE BE;'N KATLARI BUZZ IKISININ ORTAK KATLARI FIZZBUZZ
+
+// boş array oluştur
+//fızzBuzz funtıon yaz
+//funtıon her çeğrıldığında 1 den başlayarak sırayla ekle
+// 3 ve 3ün katları fızzö 5 ve5 in katları Buzz 15 ve katları FızzBuzz olarak yazdır
+
+
+/*
+for (i = 1; i <= 100; i++)
+console.log(i)
+
+for (i = 1; i<= 100; i++){
+
+    if (i%3 ==0){
+        console.log("Fizz")
+    }
+    console.log(i)
+
+} if (i % 5 == 0){
+    console.log("Buzz")
+} else{
+    console.log(i)
+}
+
+for(i =1; i<=100; i++){
+    if ((i % 3 == 0) && (i % 5 == 0))
+    console.log("FizzBuzz")
+
+} if (i % 3 == 0) {
+    console.log("Fizz")
+} else if (i %5 ==0){
+    console.log("Buzz")
+}else{ 
+    console.log(i)
+*/
+
+// yeni alistirma 
+
+function newarr(n, arr =[]){
+    if(n === 1){
+        arr.push(1);
+        return arr.reverse();
+    }else{
+        if(n%4 === 0 && n% 5 ===0){
+            arr.push("FizzBuzz");
+        } else if (n% 4 ===0){
+            arr.push("Fizz");
+            }else if (n% 5 ===0){
+                arr.push("Buzz");
+            }else{
+                arr.push("" +n);
+            }
+            return newarr(n-1, arr);
+    }
+}
+console.log(newarr(20));
+
+
+////-----OBJECTS -----------------
+
+const employeeArr = [
+`Jhon`,
+`Snow`,
+38,
+`trainer`
+
+]
+//key -value pairs
+/*
+const empObj ={
+    firstName: `Jhon`,
+    LastName: `Snow`,
+    age: 38,
+    job: `trainer`
+}
+console.log(empObj)
+
+
+ //--1.DOT NOTATION ----2. BRACKET NOTATION
+
+
+ //----1. dot notation(.)
+    console.log(empObj.firstName)
+
+
+    //--- bracket notation(f)
+console.log(empObj[`firstName`])
+
+nameKey ="Name"
+console.log(empObj [`first` + nameKey])
+console.log(empObj [`last` + nameKey])
+
+const val = prompt("What do you want to know about Jhon")
+//console.log(empObj.val)
+//console.log(empObj[val])
+
+//empObj[val] ? console.log(empObj[val]) : console.log("Wrong Request")
+
+empObj.location = "Germany"
+console.log(empObj)
+
+empObj["mail"] = "abc@mail.com"
+console.log(empObj)
+
+empObj[`language`] = ["Spanish", "Deutsch", "Spanish"]
+console.log(empObj)
+
+empObj[`school`] = [ "monesotaprep", "minesotaSecondary", "Harwerd"]
+console.log(empObj)
+*/
+
+const empObj2 = {
+    firstName: `Jhon`,
+    LastName: `Snow`,
+    birthYear: 1990,
+    job: "trainer",
+
+   // calcAge : function(birthYear){
+   //     return 2021 - birthYear
+   // }
+   calcAge : function(){
+       console.log("this: ", this)
+       return 2021- this.birthYear
+   }
+}
+
+console.log(empObj2.calcAge())
