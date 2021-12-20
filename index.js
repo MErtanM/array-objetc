@@ -220,7 +220,7 @@ console.log(empObj)
 empObj[`school`] = [ "monesotaprep", "minesotaSecondary", "Harwerd"]
 console.log(empObj)
 */
-
+/*
 const empObj2 = {
     firstName: `Jhon`,
     LastName: `Snow`,
@@ -237,3 +237,49 @@ const empObj2 = {
 }
 
 console.log(empObj2.calcAge())
+
+*/
+const fbArray =[] 
+let count =1;
+
+ function fizzBuzz(){
+     if (count % 3 ==0 && count %5 !=0) {
+         fbArray.push("Fizz");
+     }else if (count % 5 == 0 && count % 3 != 0){
+         fbArray.push(`Buzz`)
+      } else if (count % 3 == 0 && count %5 == 0){
+                 fbArray.push(`FizzBuzz`)
+             }else { fbArray.push(count)
+         }
+         count++
+         return fbArray
+     
+ fbArray.push(count) 
+ count++
+ return fbArray
+        }   
+ 
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ 
