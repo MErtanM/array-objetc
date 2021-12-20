@@ -118,6 +118,52 @@ console.log(studentArray)
 
 
 /*
+const fbArray =[] 
+let count =1;
+
+ function fizzBuzz(){
+     if (count % 3 ==0 && count %5 !=0) {
+         fbArray.push("Fizz");
+     }else if (count % 5 == 0 && count % 3 != 0){
+         fbArray.push(`Buzz`)
+      } else if (count % 3 == 0 && count %5 == 0){
+                 fbArray.push(`FizzBuzz`)
+             }else { fbArray.push(count)
+         }
+         count++
+         return fbArray
+     
+ fbArray.push(count) 
+ count++
+ return fbArray
+        }   
+ 
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ console.log(fizzBuzz())
+ */
+
+/*
 for (i = 1; i <= 100; i++)
 console.log(i)
 
@@ -239,47 +285,97 @@ const empObj2 = {
 console.log(empObj2.calcAge())
 
 */
-const fbArray =[] 
-let count =1;
+//--------------LOOP------------------------------//
+/*
+console.log("push up 1")
+console.log("push up 2")
+console.log("push up 3")
+console.log("push up 4")
+console.log("push up 5")
+console.log("push up 6")
+console.log("push up 7")
+console.log("push up 8")
+console.log("push up 9")
+console.log("push up 10")
+console.log("push up 11")
 
- function fizzBuzz(){
-     if (count % 3 ==0 && count %5 !=0) {
-         fbArray.push("Fizz");
-     }else if (count % 5 == 0 && count % 3 != 0){
-         fbArray.push(`Buzz`)
-      } else if (count % 3 == 0 && count %5 == 0){
-                 fbArray.push(`FizzBuzz`)
-             }else { fbArray.push(count)
-         }
-         count++
-         return fbArray
-     
- fbArray.push(count) 
- count++
- return fbArray
-        }   
- 
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- console.log(fizzBuzz())
- 
+*/
+//for(let rep = 1; rep <= 30; rep++){
+ //   console.log(`push up ${rep}`)
+//}
+//
+/*
+const fbArray = []
+
+for(let i = 1; i <=100; i++){
+    if(i % 3 == 0 && i % 5 == 0){
+        fbArray.push("FizzBuzz")
+    } else if (i % 5 == 0) {
+        fbArray.push(`Buzz`)
+    }else if ( i %3 == 0){
+        fbArray.push(`Fizz`)
+    }else{
+        fbArray.push(i)
+}
+
+}
+console.log(fbArray)
+*/
+
+const array = ["data1", 'data2', "data3", "data4", "data5"]
+
+//console.log(array[0])
+//console.log(array[1])
+//console.log(array[2])
+//console.log(array[3])
+
+for (let i =0; i< array.length; i++){
+    console.log(array[i])
+}
+
+
+
+// continue -break-----
+
+//let evenNumbers = []
+//for(let i =0; i<=100; i++){
+//if(i % 2 != 0) continue
+//if(i== 51) break
+//evenNumbers.push(i)
+
+//}
+//console.log(evenNumbers)
+//console.log(fizzBuzz())
+/*
+
+for(let i = 1; i <= 3; i++){
+    console.log( `__________ Exercise ${i}`)
+    for(let j =1; j<= 5; j++){
+        console.log(`repeat ${j}`)
+        for(let m = 1; m<= 3; m++){
+            console.log(`break ${m} sec`)
+        }
+    }
+}
+
+const reverseArray =[]
+for (let i = 10; i >= 0; i--){
+    reverseArray.push(i)
+}
+console.log(reverseArray)
+*/
+
+
+//--------- WHILE----------
+
+//let rep =1
+//while(rep<=10){
+ //   console.log(`push up ${rep}`)
+ //   rep++
+//}
+
+let dice = Math.trunc(Math.random() * 6)+1
+console.log(dice)
+while(dice !==6){
+    console.log(`You rolled ${dice}`)
+}
